@@ -1,0 +1,102 @@
+.listItem {
+    width: 225px;
+    cursor: pointer;
+
+    .thumbnail {
+        display: flex;
+        border-radius: 5px;
+        height: 175px;
+        opacity: 0.8;
+        object-fit: cover;
+        background-image: url("./witcher.jpg");
+        background-repeat: no-repeat;
+        place-content: center;
+
+      
+        -webkit-box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #39cf31, inset 0px -10px 27px -8px #a31925,
+            -50px -40px 0px -22px rgba(202, 46, 25, 0);
+        box-shadow: 0px 0px 0px 5px #bd0808, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #a31925,
+            -50px -40px 0px -22px rgba(255, 52, 27, 0);
+
+        .playBtn {   
+            opacity: 2;
+            z-index: 3;
+            color: rgb(15, 16, 19);
+        }
+        video {
+            display: none;
+        }
+    }
+
+    &:hover {
+        width: 380px;
+        height: 520px;
+
+        // -webkit-box-shadow: 0px 0px 0px 8px #48d84d, 0px 0px 0px 16px #4b4c4b, 0px 0px 0px 24px #828482,
+        //     0px 0px 0px 31px #3585ad, 0px 0px 0px 39px #daddda, 7px 9px 8px 5px rgba(255, 52, 27, 0);
+        // box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4b4c4b, 0px 0px 0px 24px #828482,
+        //     0px 0px 0px 31px #b2b5b2, 0px 0px 0px 39px #67ca67, 7px 9px 8px 5px rgba(255, 52, 27, 0);
+        -webkit-box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #39cf31, inset 0px -10px 27px -8px #a31925,
+            -50px -40px 0px -22px rgba(202, 46, 25, 0);
+        box-shadow: 0px 0px 0px 5px #bd0808, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #a31925,
+            -50px -40px 0px -22px rgba(255, 52, 27, 0);
+
+        .thumbnail {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+
+            video {
+                display: block;
+                object-fit: cover;
+                width: 380px;
+                height: 175px;
+            }
+            .playBtn {
+                display: none;
+            }
+        }
+
+        .itemInfo {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+
+            .icons {
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr 1fr 1fr 2fr;
+                margin-bottom: 10px;
+
+                .icon {
+                    
+                    font-size: 16px;
+                }
+            }
+
+            .itemDetails {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                font-size: 24px;
+                font-weight: 600;
+                color: blue;
+
+                .limit {
+                    border-radius: 3px;
+                    border: 2px solid red;
+                    padding: 1px 3px;
+                    margin: 0 10px;
+                }
+            }
+
+            .desc {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .genre {
+                font-size: 14px;
+                color: blue;
+            }
+        }
+    }
+}

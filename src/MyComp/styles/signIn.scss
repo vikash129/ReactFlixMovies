@@ -1,0 +1,43 @@
+.signIn{
+border: 2px solid rgb(216, 9, 9);
+background : linear-gradient(to bottom , rgba(75, 121, 214, 0.7) 4% , rgba(15, 14, 13, 0.6) 50%);
+display: flex;
+flex-direction: column;
+padding: 5px;
+margin: 30px;
+justify-content: center;
+align-items: center;
+z-index: 5;
+
+form {
+    width: 360px;
+    height: 255px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    justify-content: space-around;
+
+    input {
+        border-radius: 5px;
+        flex: 9;
+        height: 40px;
+        border: none;
+        padding: 3px 10px;
+        margin: 7px 0;
+        background-color: rgb(181, 224, 162);
+
+        &::placeholder{
+            color: rgb(255, 61, 13);
+        }
+    }
+    
+}
+.info {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+}
